@@ -1,0 +1,943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B50B008D9759EA926F5DC2A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC83D192E07BBC181EC1DAE3 /* libPods.a */; };
+		EB381EA31BA294D300D400B4 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB381EA21BA294D300D400B4 /* YPDrawSignatureView.swift */; };
+		EB4BFD0F1B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4BFD0D1B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.swift */; };
+		EB4BFD101B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB4BFD0E1B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.xib */; };
+		EB4BFD141B9EAAF1007B5D0D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4BFD121B9EAAF1007B5D0D /* Fabric.framework */; };
+		EB4BFD151B9EAAF1007B5D0D /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4BFD131B9EAAF1007B5D0D /* Crashlytics.framework */; };
+		EB4BFD181B9FED8A007B5D0D /* DealQuestionsTalentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4BFD161B9FED8A007B5D0D /* DealQuestionsTalentView.swift */; };
+		EB4BFD191B9FED8A007B5D0D /* DealQuestionsTalentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB4BFD171B9FED8A007B5D0D /* DealQuestionsTalentView.xib */; };
+		EB4BFD1C1B9FF057007B5D0D /* DealQuestionsMasterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB4BFD1B1B9FF057007B5D0D /* DealQuestionsMasterView.xib */; };
+		EB4BFD1E1B9FF067007B5D0D /* DealQuestionsMasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4BFD1D1B9FF067007B5D0D /* DealQuestionsMasterView.swift */; };
+		EB4BFD201B9FF286007B5D0D /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4BFD1F1B9FF286007B5D0D /* Deal.swift */; };
+		EB4BFD221BA0E17D007B5D0D /* DealQuestionsWriterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB4BFD211BA0E17D007B5D0D /* DealQuestionsWriterView.xib */; };
+		EB4BFD241BA0E191007B5D0D /* DealQuestionsWriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4BFD231BA0E191007B5D0D /* DealQuestionsWriterView.swift */; };
+		EB4BFD261BA14E9A007B5D0D /* DummyDeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4BFD251BA14E9A007B5D0D /* DummyDeal.swift */; };
+		EB6FE9FB1BA28AF30026DCCF /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6FE9FA1BA28AF30026DCCF /* TestViewController.swift */; };
+		EBA10E4F1B9E2A9F006824B4 /* studioplusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E4E1B9E2A9F006824B4 /* studioplusTests.swift */; };
+		EBA10E5E1B9E2AF2006824B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E591B9E2AF2006824B4 /* AppDelegate.swift */; };
+		EBA10E5F1B9E2AF2006824B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E5A1B9E2AF2006824B4 /* ViewController.swift */; };
+		EBA10E601B9E2AF2006824B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E5B1B9E2AF2006824B4 /* Main.storyboard */; };
+		EBA10E611B9E2AF2006824B4 /* ToDo in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E5C1B9E2AF2006824B4 /* ToDo */; };
+		EBA10E621B9E2AF2006824B4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E5D1B9E2AF2006824B4 /* Settings.swift */; };
+		EBA10E691B9E2B17006824B4 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E631B9E2B17006824B4 /* Project.swift */; };
+		EBA10E6A1B9E2B17006824B4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E641B9E2B17006824B4 /* Location.swift */; };
+		EBA10E6B1B9E2B17006824B4 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E651B9E2B17006824B4 /* Role.swift */; };
+		EBA10E6C1B9E2B17006824B4 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E661B9E2B17006824B4 /* Person.swift */; };
+		EBA10E6D1B9E2B17006824B4 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E671B9E2B17006824B4 /* Material.swift */; };
+		EBA10E6E1B9E2B17006824B4 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E681B9E2B17006824B4 /* Track.swift */; };
+		EBA10E731B9E2B30006824B4 /* AddProjectSceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E701B9E2B30006824B4 /* AddProjectSceneManager.swift */; };
+		EBA10E741B9E2B30006824B4 /* AddNewProjectSidebar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E711B9E2B30006824B4 /* AddNewProjectSidebar.xib */; };
+		EBA10E751B9E2B30006824B4 /* AddNewProjectSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E721B9E2B30006824B4 /* AddNewProjectSidebar.swift */; };
+		EBA10E791B9E2B4A006824B4 /* ProjectDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E771B9E2B4A006824B4 /* ProjectDetailsView.xib */; };
+		EBA10E7A1B9E2B4A006824B4 /* ProjectDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E781B9E2B4A006824B4 /* ProjectDetailsView.swift */; };
+		EBA10EA01B9E2B62006824B4 /* DealSetupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E7C1B9E2B62006824B4 /* DealSetupView.xib */; };
+		EBA10EA11B9E2B62006824B4 /* DealSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E7D1B9E2B62006824B4 /* DealSetupView.swift */; };
+		EBA10EA21B9E2B62006824B4 /* DealSetupAddPersonDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E7E1B9E2B62006824B4 /* DealSetupAddPersonDialog.xib */; };
+		EBA10EA31B9E2B62006824B4 /* DealSetupAddPersonDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E7F1B9E2B62006824B4 /* DealSetupAddPersonDialog.swift */; };
+		EBA10EA41B9E2B62006824B4 /* DealSetupPeopleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E801B9E2B62006824B4 /* DealSetupPeopleView.xib */; };
+		EBA10EA51B9E2B62006824B4 /* DealSetupPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E811B9E2B62006824B4 /* DealSetupPeopleView.swift */; };
+		EBA10EA61B9E2B62006824B4 /* DealSetupPeopleTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E821B9E2B62006824B4 /* DealSetupPeopleTable.swift */; };
+		EBA10EA71B9E2B62006824B4 /* DealSetupPeopleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E831B9E2B62006824B4 /* DealSetupPeopleTableCell.xib */; };
+		EBA10EA81B9E2B62006824B4 /* DealSetupPeopleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E841B9E2B62006824B4 /* DealSetupPeopleTableCell.swift */; };
+		EBA10EA91B9E2B62006824B4 /* DealSetupTrackTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E851B9E2B62006824B4 /* DealSetupTrackTableCell.swift */; };
+		EBA10EAA1B9E2B62006824B4 /* DealSetupTrackTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E861B9E2B62006824B4 /* DealSetupTrackTableCell.xib */; };
+		EBA10EAB1B9E2B62006824B4 /* DealSetupLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E871B9E2B62006824B4 /* DealSetupLocationView.swift */; };
+		EBA10EAC1B9E2B62006824B4 /* DealSetupLocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E881B9E2B62006824B4 /* DealSetupLocationView.xib */; };
+		EBA10EAD1B9E2B62006824B4 /* DealSetupAddLocationDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E891B9E2B62006824B4 /* DealSetupAddLocationDialog.swift */; };
+		EBA10EAE1B9E2B62006824B4 /* DealSetupAddLocationDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E8A1B9E2B62006824B4 /* DealSetupAddLocationDialog.xib */; };
+		EBA10EAF1B9E2B62006824B4 /* DealSetupAddLocationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E8B1B9E2B62006824B4 /* DealSetupAddLocationTableCell.swift */; };
+		EBA10EB01B9E2B62006824B4 /* DealSetupAddLocationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E8C1B9E2B62006824B4 /* DealSetupAddLocationTableCell.xib */; };
+		EBA10EB11B9E2B62006824B4 /* DealSetupMusicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E8D1B9E2B62006824B4 /* DealSetupMusicView.xib */; };
+		EBA10EB21B9E2B62006824B4 /* DealSetupMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E8E1B9E2B62006824B4 /* DealSetupMusicView.swift */; };
+		EBA10EB31B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E8F1B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.swift */; };
+		EBA10EB41B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E901B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.xib */; };
+		EBA10EB51B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E911B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.xib */; };
+		EBA10EB61B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E921B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.swift */; };
+		EBA10EB71B9E2B62006824B4 /* DealSetupMusicAddTrackTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E931B9E2B62006824B4 /* DealSetupMusicAddTrackTableCell.swift */; };
+		EBA10EB81B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E941B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.swift */; };
+		EBA10EB91B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E951B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.xib */; };
+		EBA10EBA1B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E961B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.swift */; };
+		EBA10EBB1B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E971B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.xib */; };
+		EBA10EBC1B9E2B62006824B4 /* DealSetupMaterialsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E981B9E2B62006824B4 /* DealSetupMaterialsView.xib */; };
+		EBA10EBD1B9E2B62006824B4 /* DealSetupMaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E991B9E2B62006824B4 /* DealSetupMaterialsView.swift */; };
+		EBA10EBE1B9E2B62006824B4 /* DealSetupAddMaterialDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E9A1B9E2B62006824B4 /* DealSetupAddMaterialDialog.xib */; };
+		EBA10EBF1B9E2B62006824B4 /* DealSetupAddMaterialDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E9B1B9E2B62006824B4 /* DealSetupAddMaterialDialog.swift */; };
+		EBA10EC21B9E2B62006824B4 /* DealSetupMaterialTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA10E9E1B9E2B62006824B4 /* DealSetupMaterialTableCell.swift */; };
+		EBA10EC31B9E2B62006824B4 /* DealSetupMaterialTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10E9F1B9E2B62006824B4 /* DealSetupMaterialTableCell.xib */; };
+		EBA10ECC1B9E2BAE006824B4 /* check_mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA10EC51B9E2BAE006824B4 /* check_mark@2x.png */; };
+		EBA10ECD1B9E2BAE006824B4 /* done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA10EC61B9E2BAE006824B4 /* done@2x.png */; };
+		EBA10ECE1B9E2BAE006824B4 /* drop_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA10EC71B9E2BAE006824B4 /* drop_down@2x.png */; };
+		EBA10ECF1B9E2BAE006824B4 /* DropDownListView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA10EC91B9E2BAE006824B4 /* DropDownListView.m */; };
+		EBA10ED01B9E2BAE006824B4 /* DropDownViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA10ECB1B9E2BAE006824B4 /* DropDownViewCell.m */; };
+		EBA10ED41B9E2C0C006824B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA10ED21B9E2C0C006824B4 /* Images.xcassets */; };
+		EBA10ED51B9E2C0C006824B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA10ED31B9E2C0C006824B4 /* LaunchScreen.xib */; };
+		EBA2853F1BA9EC42000EC731 /* DealQuestionsDirectorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA2853E1BA9EC42000EC731 /* DealQuestionsDirectorView.xib */; };
+		EBA285411BA9ECDB000EC731 /* DealQuestionsDirectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA285401BA9ECDB000EC731 /* DealQuestionsDirectorView.swift */; };
+		EBA285431BA9EE6C000EC731 /* DealQuestionsPhotographerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA285421BA9EE6C000EC731 /* DealQuestionsPhotographerView.xib */; };
+		EBA285451BA9EEEB000EC731 /* DealQuestionsPhotographerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA285441BA9EEEB000EC731 /* DealQuestionsPhotographerView.swift */; };
+		EBA285471BA9EFB3000EC731 /* DealQuestionsPerformerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA285461BA9EFB3000EC731 /* DealQuestionsPerformerView.xib */; };
+		EBA285491BA9F055000EC731 /* DealQuestionsPerformerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA285481BA9F055000EC731 /* DealQuestionsPerformerView.swift */; };
+		EBA2854B1BA9F148000EC731 /* DealQuestionsPostProductionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA2854A1BA9F148000EC731 /* DealQuestionsPostProductionView.xib */; };
+		EBA2854F1BA9F295000EC731 /* DealQuestionsPostProductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2854E1BA9F295000EC731 /* DealQuestionsPostProductionView.swift */; };
+		EBA285511BA9F485000EC731 /* DealQuestionsProducerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA285501BA9F485000EC731 /* DealQuestionsProducerView.xib */; };
+		EBA285531BA9F4EE000EC731 /* DealQuestionsProducerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA285521BA9F4EE000EC731 /* DealQuestionsProducerView.swift */; };
+		EBA285551BA9F557000EC731 /* DealQuestionsMusicLocMat.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA285541BA9F557000EC731 /* DealQuestionsMusicLocMat.xib */; };
+		EBA285571BA9F6B6000EC731 /* DealQuestionsMusicLocMat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA285561BA9F6B6000EC731 /* DealQuestionsMusicLocMat.swift */; };
+		EBA285591BA9FCBA000EC731 /* DealQuestionsCollaboratorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA285581BA9FCBA000EC731 /* DealQuestionsCollaboratorView.xib */; };
+		EBA2855C1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2855A1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.swift */; };
+		EBA2855D1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA2855B1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.xib */; };
+		EBA2855F1BAA0146000EC731 /* DealQuestionsCollaboratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2855E1BAA0146000EC731 /* DealQuestionsCollaboratorView.swift */; };
+		EBCB69521BA37FB0001BA276 /* DealSignView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCB69511BA37FB0001BA276 /* DealSignView.xib */; };
+		EBCB69541BA38015001BA276 /* DealSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB69531BA38015001BA276 /* DealSignView.swift */; };
+		EBE010121BA784D2002F2689 /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0100F1BA784D2002F2689 /* PopDatePicker.swift */; };
+		EBE010131BA784D2002F2689 /* PopDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE010101BA784D2002F2689 /* PopDateViewController.swift */; };
+		EBE010141BA784D2002F2689 /* PopDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE010111BA784D2002F2689 /* PopDateViewController.xib */; };
+		EBE010171BA79AF0002F2689 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE010161BA79AF0002F2689 /* LoginViewController.swift */; };
+		EBE010191BA79BE1002F2689 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE010181BA79BE1002F2689 /* UIViewControllerExtension.swift */; };
+		EBE0101B1BA79C04002F2689 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0101A1BA79C04002F2689 /* RegisterViewController.swift */; };
+		EBE0101E1BA9E831002F2689 /* DealQuestionsCrewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE0101D1BA9E831002F2689 /* DealQuestionsCrewView.xib */; };
+		EBE010201BA9E930002F2689 /* DealQuestionsCrewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0101F1BA9E930002F2689 /* DealQuestionsCrewView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBA10E491B9E2A9F006824B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBA10E2B1B9E2A9F006824B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBA10E321B9E2A9F006824B4;
+			remoteInfo = studioplus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D1D05874C56B92F6208280E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CC83D192E07BBC181EC1DAE3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA086C34EAAB737169963623 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EB381EA21BA294D300D400B4 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
+		EB4BFD0D1B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupTrackPersonTableCell.swift; sourceTree = "<group>"; };
+		EB4BFD0E1B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupTrackPersonTableCell.xib; sourceTree = "<group>"; };
+		EB4BFD121B9EAAF1007B5D0D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		EB4BFD131B9EAAF1007B5D0D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		EB4BFD161B9FED8A007B5D0D /* DealQuestionsTalentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsTalentView.swift; sourceTree = "<group>"; };
+		EB4BFD171B9FED8A007B5D0D /* DealQuestionsTalentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsTalentView.xib; sourceTree = "<group>"; };
+		EB4BFD1B1B9FF057007B5D0D /* DealQuestionsMasterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsMasterView.xib; sourceTree = "<group>"; };
+		EB4BFD1D1B9FF067007B5D0D /* DealQuestionsMasterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsMasterView.swift; sourceTree = "<group>"; };
+		EB4BFD1F1B9FF286007B5D0D /* Deal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
+		EB4BFD211BA0E17D007B5D0D /* DealQuestionsWriterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsWriterView.xib; sourceTree = "<group>"; };
+		EB4BFD231BA0E191007B5D0D /* DealQuestionsWriterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsWriterView.swift; sourceTree = "<group>"; };
+		EB4BFD251BA14E9A007B5D0D /* DummyDeal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyDeal.swift; sourceTree = "<group>"; };
+		EB6FE9FA1BA28AF30026DCCF /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		EBA10E331B9E2A9F006824B4 /* studioplus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studioplus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA10E371B9E2A9F006824B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBA10E481B9E2A9F006824B4 /* studioplusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studioplusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA10E4D1B9E2A9F006824B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBA10E4E1B9E2A9F006824B4 /* studioplusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studioplusTests.swift; sourceTree = "<group>"; };
+		EBA10E581B9E2AF1006824B4 /* studioplus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "studioplus-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBA10E591B9E2AF2006824B4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBA10E5A1B9E2AF2006824B4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBA10E5B1B9E2AF2006824B4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EBA10E5C1B9E2AF2006824B4 /* ToDo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo; sourceTree = "<group>"; };
+		EBA10E5D1B9E2AF2006824B4 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EBA10E631B9E2B17006824B4 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		EBA10E641B9E2B17006824B4 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EBA10E651B9E2B17006824B4 /* Role.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		EBA10E661B9E2B17006824B4 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EBA10E671B9E2B17006824B4 /* Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		EBA10E681B9E2B17006824B4 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		EBA10E701B9E2B30006824B4 /* AddProjectSceneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProjectSceneManager.swift; sourceTree = "<group>"; };
+		EBA10E711B9E2B30006824B4 /* AddNewProjectSidebar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewProjectSidebar.xib; sourceTree = "<group>"; };
+		EBA10E721B9E2B30006824B4 /* AddNewProjectSidebar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewProjectSidebar.swift; sourceTree = "<group>"; };
+		EBA10E771B9E2B4A006824B4 /* ProjectDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectDetailsView.xib; sourceTree = "<group>"; };
+		EBA10E781B9E2B4A006824B4 /* ProjectDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailsView.swift; sourceTree = "<group>"; };
+		EBA10E7C1B9E2B62006824B4 /* DealSetupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupView.xib; sourceTree = "<group>"; };
+		EBA10E7D1B9E2B62006824B4 /* DealSetupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupView.swift; sourceTree = "<group>"; };
+		EBA10E7E1B9E2B62006824B4 /* DealSetupAddPersonDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupAddPersonDialog.xib; sourceTree = "<group>"; };
+		EBA10E7F1B9E2B62006824B4 /* DealSetupAddPersonDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupAddPersonDialog.swift; sourceTree = "<group>"; };
+		EBA10E801B9E2B62006824B4 /* DealSetupPeopleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupPeopleView.xib; sourceTree = "<group>"; };
+		EBA10E811B9E2B62006824B4 /* DealSetupPeopleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupPeopleView.swift; sourceTree = "<group>"; };
+		EBA10E821B9E2B62006824B4 /* DealSetupPeopleTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupPeopleTable.swift; sourceTree = "<group>"; };
+		EBA10E831B9E2B62006824B4 /* DealSetupPeopleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupPeopleTableCell.xib; sourceTree = "<group>"; };
+		EBA10E841B9E2B62006824B4 /* DealSetupPeopleTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupPeopleTableCell.swift; sourceTree = "<group>"; };
+		EBA10E851B9E2B62006824B4 /* DealSetupTrackTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupTrackTableCell.swift; sourceTree = "<group>"; };
+		EBA10E861B9E2B62006824B4 /* DealSetupTrackTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupTrackTableCell.xib; sourceTree = "<group>"; };
+		EBA10E871B9E2B62006824B4 /* DealSetupLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupLocationView.swift; sourceTree = "<group>"; };
+		EBA10E881B9E2B62006824B4 /* DealSetupLocationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupLocationView.xib; sourceTree = "<group>"; };
+		EBA10E891B9E2B62006824B4 /* DealSetupAddLocationDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupAddLocationDialog.swift; sourceTree = "<group>"; };
+		EBA10E8A1B9E2B62006824B4 /* DealSetupAddLocationDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupAddLocationDialog.xib; sourceTree = "<group>"; };
+		EBA10E8B1B9E2B62006824B4 /* DealSetupAddLocationTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupAddLocationTableCell.swift; sourceTree = "<group>"; };
+		EBA10E8C1B9E2B62006824B4 /* DealSetupAddLocationTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupAddLocationTableCell.xib; sourceTree = "<group>"; };
+		EBA10E8D1B9E2B62006824B4 /* DealSetupMusicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupMusicView.xib; sourceTree = "<group>"; };
+		EBA10E8E1B9E2B62006824B4 /* DealSetupMusicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupMusicView.swift; sourceTree = "<group>"; };
+		EBA10E8F1B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupMusicAddPersonTableCell.swift; sourceTree = "<group>"; };
+		EBA10E901B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupMusicAddPersonTableCell.xib; sourceTree = "<group>"; };
+		EBA10E911B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupMusicAddTrackDialog.xib; sourceTree = "<group>"; };
+		EBA10E921B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupMusicAddTrackDialog.swift; sourceTree = "<group>"; };
+		EBA10E931B9E2B62006824B4 /* DealSetupMusicAddTrackTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupMusicAddTrackTableCell.swift; sourceTree = "<group>"; };
+		EBA10E941B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupMusicAddTrackComposerTableCell.swift; sourceTree = "<group>"; };
+		EBA10E951B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupMusicAddTrackComposerTableCell.xib; sourceTree = "<group>"; };
+		EBA10E961B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupMusicAddTrackRecordingArtistTableCell.swift; sourceTree = "<group>"; };
+		EBA10E971B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupMusicAddTrackRecordingArtistTableCell.xib; sourceTree = "<group>"; };
+		EBA10E981B9E2B62006824B4 /* DealSetupMaterialsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupMaterialsView.xib; sourceTree = "<group>"; };
+		EBA10E991B9E2B62006824B4 /* DealSetupMaterialsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupMaterialsView.swift; sourceTree = "<group>"; };
+		EBA10E9A1B9E2B62006824B4 /* DealSetupAddMaterialDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupAddMaterialDialog.xib; sourceTree = "<group>"; };
+		EBA10E9B1B9E2B62006824B4 /* DealSetupAddMaterialDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupAddMaterialDialog.swift; sourceTree = "<group>"; };
+		EBA10E9E1B9E2B62006824B4 /* DealSetupMaterialTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSetupMaterialTableCell.swift; sourceTree = "<group>"; };
+		EBA10E9F1B9E2B62006824B4 /* DealSetupMaterialTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSetupMaterialTableCell.xib; sourceTree = "<group>"; };
+		EBA10EC51B9E2BAE006824B4 /* check_mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_mark@2x.png"; sourceTree = "<group>"; };
+		EBA10EC61B9E2BAE006824B4 /* done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "done@2x.png"; sourceTree = "<group>"; };
+		EBA10EC71B9E2BAE006824B4 /* drop_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "drop_down@2x.png"; sourceTree = "<group>"; };
+		EBA10EC81B9E2BAE006824B4 /* DropDownListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownListView.h; sourceTree = "<group>"; };
+		EBA10EC91B9E2BAE006824B4 /* DropDownListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownListView.m; sourceTree = "<group>"; };
+		EBA10ECA1B9E2BAE006824B4 /* DropDownViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownViewCell.h; sourceTree = "<group>"; };
+		EBA10ECB1B9E2BAE006824B4 /* DropDownViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownViewCell.m; sourceTree = "<group>"; };
+		EBA10ED21B9E2C0C006824B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EBA10ED31B9E2C0C006824B4 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		EBA2853E1BA9EC42000EC731 /* DealQuestionsDirectorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsDirectorView.xib; sourceTree = "<group>"; };
+		EBA285401BA9ECDB000EC731 /* DealQuestionsDirectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsDirectorView.swift; sourceTree = "<group>"; };
+		EBA285421BA9EE6C000EC731 /* DealQuestionsPhotographerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsPhotographerView.xib; sourceTree = "<group>"; };
+		EBA285441BA9EEEB000EC731 /* DealQuestionsPhotographerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsPhotographerView.swift; sourceTree = "<group>"; };
+		EBA285461BA9EFB3000EC731 /* DealQuestionsPerformerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsPerformerView.xib; sourceTree = "<group>"; };
+		EBA285481BA9F055000EC731 /* DealQuestionsPerformerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsPerformerView.swift; sourceTree = "<group>"; };
+		EBA2854A1BA9F148000EC731 /* DealQuestionsPostProductionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsPostProductionView.xib; sourceTree = "<group>"; };
+		EBA2854E1BA9F295000EC731 /* DealQuestionsPostProductionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsPostProductionView.swift; sourceTree = "<group>"; };
+		EBA285501BA9F485000EC731 /* DealQuestionsProducerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsProducerView.xib; sourceTree = "<group>"; };
+		EBA285521BA9F4EE000EC731 /* DealQuestionsProducerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsProducerView.swift; sourceTree = "<group>"; };
+		EBA285541BA9F557000EC731 /* DealQuestionsMusicLocMat.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsMusicLocMat.xib; sourceTree = "<group>"; };
+		EBA285561BA9F6B6000EC731 /* DealQuestionsMusicLocMat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsMusicLocMat.swift; sourceTree = "<group>"; };
+		EBA285581BA9FCBA000EC731 /* DealQuestionsCollaboratorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsCollaboratorView.xib; sourceTree = "<group>"; };
+		EBA2855A1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsCollaboratorTableViewCell.swift; sourceTree = "<group>"; };
+		EBA2855B1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsCollaboratorTableViewCell.xib; sourceTree = "<group>"; };
+		EBA2855E1BAA0146000EC731 /* DealQuestionsCollaboratorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsCollaboratorView.swift; sourceTree = "<group>"; };
+		EBCB69511BA37FB0001BA276 /* DealSignView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSignView.xib; sourceTree = "<group>"; };
+		EBCB69531BA38015001BA276 /* DealSignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSignView.swift; sourceTree = "<group>"; };
+		EBE0100F1BA784D2002F2689 /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDatePicker.swift; sourceTree = "<group>"; };
+		EBE010101BA784D2002F2689 /* PopDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDateViewController.swift; sourceTree = "<group>"; };
+		EBE010111BA784D2002F2689 /* PopDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopDateViewController.xib; sourceTree = "<group>"; };
+		EBE010161BA79AF0002F2689 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EBE010181BA79BE1002F2689 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		EBE0101A1BA79C04002F2689 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EBE0101D1BA9E831002F2689 /* DealQuestionsCrewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealQuestionsCrewView.xib; sourceTree = "<group>"; };
+		EBE0101F1BA9E930002F2689 /* DealQuestionsCrewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealQuestionsCrewView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBA10E301B9E2A9F006824B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B50B008D9759EA926F5DC2A1 /* libPods.a in Frameworks */,
+				EB4BFD151B9EAAF1007B5D0D /* Crashlytics.framework in Frameworks */,
+				EB4BFD141B9EAAF1007B5D0D /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA10E451B9E2A9F006824B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034981EB95F0EA698AFB9DD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA086C34EAAB737169963623 /* Pods.debug.xcconfig */,
+				3D1D05874C56B92F6208280E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78C2F9819326EE6976BD679C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC83D192E07BBC181EC1DAE3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB4BFD1A1B9FED9B007B5D0D /* Deal Questions Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EBA285541BA9F557000EC731 /* DealQuestionsMusicLocMat.xib */,
+				EBA285561BA9F6B6000EC731 /* DealQuestionsMusicLocMat.swift */,
+				EBA285581BA9FCBA000EC731 /* DealQuestionsCollaboratorView.xib */,
+				EBA2855E1BAA0146000EC731 /* DealQuestionsCollaboratorView.swift */,
+				EBA2855A1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.swift */,
+				EBA2855B1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.xib */,
+				EBA2854E1BA9F295000EC731 /* DealQuestionsPostProductionView.swift */,
+				EBA285501BA9F485000EC731 /* DealQuestionsProducerView.xib */,
+				EBA285521BA9F4EE000EC731 /* DealQuestionsProducerView.swift */,
+				EBA2854A1BA9F148000EC731 /* DealQuestionsPostProductionView.xib */,
+				EB4BFD1B1B9FF057007B5D0D /* DealQuestionsMasterView.xib */,
+				EB4BFD1D1B9FF067007B5D0D /* DealQuestionsMasterView.swift */,
+				EB4BFD211BA0E17D007B5D0D /* DealQuestionsWriterView.xib */,
+				EB4BFD231BA0E191007B5D0D /* DealQuestionsWriterView.swift */,
+				EB4BFD171B9FED8A007B5D0D /* DealQuestionsTalentView.xib */,
+				EB4BFD161B9FED8A007B5D0D /* DealQuestionsTalentView.swift */,
+				EBA2853E1BA9EC42000EC731 /* DealQuestionsDirectorView.xib */,
+				EBA285401BA9ECDB000EC731 /* DealQuestionsDirectorView.swift */,
+				EBA285461BA9EFB3000EC731 /* DealQuestionsPerformerView.xib */,
+				EBA285481BA9F055000EC731 /* DealQuestionsPerformerView.swift */,
+				EBA285421BA9EE6C000EC731 /* DealQuestionsPhotographerView.xib */,
+				EBA285441BA9EEEB000EC731 /* DealQuestionsPhotographerView.swift */,
+				EBE0101D1BA9E831002F2689 /* DealQuestionsCrewView.xib */,
+				EBE0101F1BA9E930002F2689 /* DealQuestionsCrewView.swift */,
+			);
+			name = "Deal Questions Scene";
+			sourceTree = "<group>";
+		};
+		EBA10E2A1B9E2A9F006824B4 = {
+			isa = PBXGroup;
+			children = (
+				EB4BFD121B9EAAF1007B5D0D /* Fabric.framework */,
+				EB4BFD131B9EAAF1007B5D0D /* Crashlytics.framework */,
+				EBA10E351B9E2A9F006824B4 /* studioplus */,
+				EBA10E4B1B9E2A9F006824B4 /* studioplusTests */,
+				EBA10E341B9E2A9F006824B4 /* Products */,
+				034981EB95F0EA698AFB9DD1 /* Pods */,
+				78C2F9819326EE6976BD679C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBA10E341B9E2A9F006824B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10E331B9E2A9F006824B4 /* studioplus.app */,
+				EBA10E481B9E2A9F006824B4 /* studioplusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBA10E351B9E2A9F006824B4 /* studioplus */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10E361B9E2A9F006824B4 /* Supporting Files */,
+			);
+			path = studioplus;
+			sourceTree = "<group>";
+		};
+		EBA10E361B9E2A9F006824B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10E5C1B9E2AF2006824B4 /* ToDo */,
+				EBA10ED21B9E2C0C006824B4 /* Images.xcassets */,
+				EBA10ED31B9E2C0C006824B4 /* LaunchScreen.xib */,
+				EBA10E371B9E2A9F006824B4 /* Info.plist */,
+				EBA10E581B9E2AF1006824B4 /* studioplus-Bridging-Header.h */,
+				EB381EA21BA294D300D400B4 /* YPDrawSignatureView.swift */,
+				EBE010151BA784D5002F2689 /* PopDatePicker */,
+				EBA10ED11B9E2BB4006824B4 /* hacked DropDownList */,
+				EBE0101C1BA7A822002F2689 /* main */,
+				EBA10E6F1B9E2B1D006824B4 /* model */,
+				EBA10E761B9E2B36006824B4 /* scenes for Add New Project */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBA10E4B1B9E2A9F006824B4 /* studioplusTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10E4E1B9E2A9F006824B4 /* studioplusTests.swift */,
+				EBA10E4C1B9E2A9F006824B4 /* Supporting Files */,
+			);
+			path = studioplusTests;
+			sourceTree = "<group>";
+		};
+		EBA10E4C1B9E2A9F006824B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10E4D1B9E2A9F006824B4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBA10E6F1B9E2B1D006824B4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10E631B9E2B17006824B4 /* Project.swift */,
+				EB4BFD1F1B9FF286007B5D0D /* Deal.swift */,
+				EB4BFD251BA14E9A007B5D0D /* DummyDeal.swift */,
+				EBA10E641B9E2B17006824B4 /* Location.swift */,
+				EBA10E651B9E2B17006824B4 /* Role.swift */,
+				EBA10E661B9E2B17006824B4 /* Person.swift */,
+				EBA10E671B9E2B17006824B4 /* Material.swift */,
+				EBA10E681B9E2B17006824B4 /* Track.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		EBA10E761B9E2B36006824B4 /* scenes for Add New Project */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB69551BA3814B001BA276 /* Deal Sign Scene */,
+				EBA10E701B9E2B30006824B4 /* AddProjectSceneManager.swift */,
+				EBA10E711B9E2B30006824B4 /* AddNewProjectSidebar.xib */,
+				EBA10E721B9E2B30006824B4 /* AddNewProjectSidebar.swift */,
+				EB4BFD1A1B9FED9B007B5D0D /* Deal Questions Scene */,
+				EBA10E7B1B9E2B50006824B4 /* Project Details Scene */,
+				EBA10EC41B9E2B6C006824B4 /* Deal Setup Scene */,
+			);
+			name = "scenes for Add New Project";
+			sourceTree = "<group>";
+		};
+		EBA10E7B1B9E2B50006824B4 /* Project Details Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10E771B9E2B4A006824B4 /* ProjectDetailsView.xib */,
+				EBA10E781B9E2B4A006824B4 /* ProjectDetailsView.swift */,
+			);
+			name = "Project Details Scene";
+			sourceTree = "<group>";
+		};
+		EBA10EC41B9E2B6C006824B4 /* Deal Setup Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10E7C1B9E2B62006824B4 /* DealSetupView.xib */,
+				EBA10E7D1B9E2B62006824B4 /* DealSetupView.swift */,
+				EBA10E7E1B9E2B62006824B4 /* DealSetupAddPersonDialog.xib */,
+				EBA10E7F1B9E2B62006824B4 /* DealSetupAddPersonDialog.swift */,
+				EBA10E801B9E2B62006824B4 /* DealSetupPeopleView.xib */,
+				EBA10E811B9E2B62006824B4 /* DealSetupPeopleView.swift */,
+				EBA10E821B9E2B62006824B4 /* DealSetupPeopleTable.swift */,
+				EBA10E831B9E2B62006824B4 /* DealSetupPeopleTableCell.xib */,
+				EBA10E841B9E2B62006824B4 /* DealSetupPeopleTableCell.swift */,
+				EBA10E851B9E2B62006824B4 /* DealSetupTrackTableCell.swift */,
+				EBA10E861B9E2B62006824B4 /* DealSetupTrackTableCell.xib */,
+				EBA10E871B9E2B62006824B4 /* DealSetupLocationView.swift */,
+				EBA10E881B9E2B62006824B4 /* DealSetupLocationView.xib */,
+				EBA10E891B9E2B62006824B4 /* DealSetupAddLocationDialog.swift */,
+				EBA10E8A1B9E2B62006824B4 /* DealSetupAddLocationDialog.xib */,
+				EBA10E8B1B9E2B62006824B4 /* DealSetupAddLocationTableCell.swift */,
+				EBA10E8C1B9E2B62006824B4 /* DealSetupAddLocationTableCell.xib */,
+				EBA10E8D1B9E2B62006824B4 /* DealSetupMusicView.xib */,
+				EBA10E8E1B9E2B62006824B4 /* DealSetupMusicView.swift */,
+				EB4BFD0D1B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.swift */,
+				EB4BFD0E1B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.xib */,
+				EBA10E8F1B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.swift */,
+				EBA10E901B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.xib */,
+				EBA10E911B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.xib */,
+				EBA10E921B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.swift */,
+				EBA10E931B9E2B62006824B4 /* DealSetupMusicAddTrackTableCell.swift */,
+				EBA10E941B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.swift */,
+				EBA10E951B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.xib */,
+				EBA10E961B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.swift */,
+				EBA10E971B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.xib */,
+				EBA10E981B9E2B62006824B4 /* DealSetupMaterialsView.xib */,
+				EBA10E991B9E2B62006824B4 /* DealSetupMaterialsView.swift */,
+				EBA10E9A1B9E2B62006824B4 /* DealSetupAddMaterialDialog.xib */,
+				EBA10E9B1B9E2B62006824B4 /* DealSetupAddMaterialDialog.swift */,
+				EBA10E9E1B9E2B62006824B4 /* DealSetupMaterialTableCell.swift */,
+				EBA10E9F1B9E2B62006824B4 /* DealSetupMaterialTableCell.xib */,
+			);
+			name = "Deal Setup Scene";
+			sourceTree = "<group>";
+		};
+		EBA10ED11B9E2BB4006824B4 /* hacked DropDownList */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10EC51B9E2BAE006824B4 /* check_mark@2x.png */,
+				EBA10EC61B9E2BAE006824B4 /* done@2x.png */,
+				EBA10EC71B9E2BAE006824B4 /* drop_down@2x.png */,
+				EBA10EC81B9E2BAE006824B4 /* DropDownListView.h */,
+				EBA10EC91B9E2BAE006824B4 /* DropDownListView.m */,
+				EBA10ECA1B9E2BAE006824B4 /* DropDownViewCell.h */,
+				EBA10ECB1B9E2BAE006824B4 /* DropDownViewCell.m */,
+			);
+			name = "hacked DropDownList";
+			sourceTree = "<group>";
+		};
+		EBCB69551BA3814B001BA276 /* Deal Sign Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB69511BA37FB0001BA276 /* DealSignView.xib */,
+				EBCB69531BA38015001BA276 /* DealSignView.swift */,
+			);
+			name = "Deal Sign Scene";
+			sourceTree = "<group>";
+		};
+		EBE010151BA784D5002F2689 /* PopDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				EBE0100F1BA784D2002F2689 /* PopDatePicker.swift */,
+				EBE010101BA784D2002F2689 /* PopDateViewController.swift */,
+				EBE010111BA784D2002F2689 /* PopDateViewController.xib */,
+			);
+			name = PopDatePicker;
+			sourceTree = "<group>";
+		};
+		EBE0101C1BA7A822002F2689 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				EBA10E591B9E2AF2006824B4 /* AppDelegate.swift */,
+				EBE010181BA79BE1002F2689 /* UIViewControllerExtension.swift */,
+				EBA10E5A1B9E2AF2006824B4 /* ViewController.swift */,
+				EBE010161BA79AF0002F2689 /* LoginViewController.swift */,
+				EBE0101A1BA79C04002F2689 /* RegisterViewController.swift */,
+				EB6FE9FA1BA28AF30026DCCF /* TestViewController.swift */,
+				EBA10E5B1B9E2AF2006824B4 /* Main.storyboard */,
+				EBA10E5D1B9E2AF2006824B4 /* Settings.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBA10E321B9E2A9F006824B4 /* studioplus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA10E521B9E2A9F006824B4 /* Build configuration list for PBXNativeTarget "studioplus" */;
+			buildPhases = (
+				4463177200E5AC7E24C4CE3B /* Check Pods Manifest.lock */,
+				EBA10E2F1B9E2A9F006824B4 /* Sources */,
+				EBA10E301B9E2A9F006824B4 /* Frameworks */,
+				EBA10E311B9E2A9F006824B4 /* Resources */,
+				685D6F04AA34F25329F048B6 /* Copy Pods Resources */,
+				EB4BFD111B9EAAC1007B5D0D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = studioplus;
+			productName = studioplus;
+			productReference = EBA10E331B9E2A9F006824B4 /* studioplus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBA10E471B9E2A9F006824B4 /* studioplusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA10E551B9E2A9F006824B4 /* Build configuration list for PBXNativeTarget "studioplusTests" */;
+			buildPhases = (
+				EBA10E441B9E2A9F006824B4 /* Sources */,
+				EBA10E451B9E2A9F006824B4 /* Frameworks */,
+				EBA10E461B9E2A9F006824B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBA10E4A1B9E2A9F006824B4 /* PBXTargetDependency */,
+			);
+			name = studioplusTests;
+			productName = studioplusTests;
+			productReference = EBA10E481B9E2A9F006824B4 /* studioplusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBA10E2B1B9E2A9F006824B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = gigster;
+				TargetAttributes = {
+					EBA10E321B9E2A9F006824B4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EBA10E471B9E2A9F006824B4 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EBA10E321B9E2A9F006824B4;
+					};
+				};
+			};
+			buildConfigurationList = EBA10E2E1B9E2A9F006824B4 /* Build configuration list for PBXProject "studioplus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBA10E2A1B9E2A9F006824B4;
+			productRefGroup = EBA10E341B9E2A9F006824B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBA10E321B9E2A9F006824B4 /* studioplus */,
+				EBA10E471B9E2A9F006824B4 /* studioplusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBA10E311B9E2A9F006824B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA10EBB1B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.xib in Resources */,
+				EBA10ED41B9E2C0C006824B4 /* Images.xcassets in Resources */,
+				EBE010141BA784D2002F2689 /* PopDateViewController.xib in Resources */,
+				EBA10ECE1B9E2BAE006824B4 /* drop_down@2x.png in Resources */,
+				EBA285511BA9F485000EC731 /* DealQuestionsProducerView.xib in Resources */,
+				EBA285551BA9F557000EC731 /* DealQuestionsMusicLocMat.xib in Resources */,
+				EB4BFD221BA0E17D007B5D0D /* DealQuestionsWriterView.xib in Resources */,
+				EBA10E741B9E2B30006824B4 /* AddNewProjectSidebar.xib in Resources */,
+				EBA10EB01B9E2B62006824B4 /* DealSetupAddLocationTableCell.xib in Resources */,
+				EB4BFD101B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.xib in Resources */,
+				EBA10EB91B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.xib in Resources */,
+				EBA2855D1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.xib in Resources */,
+				EBA2854B1BA9F148000EC731 /* DealQuestionsPostProductionView.xib in Resources */,
+				EBA10ECD1B9E2BAE006824B4 /* done@2x.png in Resources */,
+				EBCB69521BA37FB0001BA276 /* DealSignView.xib in Resources */,
+				EBA10EAA1B9E2B62006824B4 /* DealSetupTrackTableCell.xib in Resources */,
+				EBA285591BA9FCBA000EC731 /* DealQuestionsCollaboratorView.xib in Resources */,
+				EB4BFD191B9FED8A007B5D0D /* DealQuestionsTalentView.xib in Resources */,
+				EBA10EB11B9E2B62006824B4 /* DealSetupMusicView.xib in Resources */,
+				EBA285471BA9EFB3000EC731 /* DealQuestionsPerformerView.xib in Resources */,
+				EBA10ECC1B9E2BAE006824B4 /* check_mark@2x.png in Resources */,
+				EBA10EA71B9E2B62006824B4 /* DealSetupPeopleTableCell.xib in Resources */,
+				EBA10EBC1B9E2B62006824B4 /* DealSetupMaterialsView.xib in Resources */,
+				EBA10EB51B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.xib in Resources */,
+				EBA10EAE1B9E2B62006824B4 /* DealSetupAddLocationDialog.xib in Resources */,
+				EBA10E611B9E2AF2006824B4 /* ToDo in Resources */,
+				EBA10EBE1B9E2B62006824B4 /* DealSetupAddMaterialDialog.xib in Resources */,
+				EBA10E601B9E2AF2006824B4 /* Main.storyboard in Resources */,
+				EBA10EC31B9E2B62006824B4 /* DealSetupMaterialTableCell.xib in Resources */,
+				EBA285431BA9EE6C000EC731 /* DealQuestionsPhotographerView.xib in Resources */,
+				EBE0101E1BA9E831002F2689 /* DealQuestionsCrewView.xib in Resources */,
+				EB4BFD1C1B9FF057007B5D0D /* DealQuestionsMasterView.xib in Resources */,
+				EBA10EAC1B9E2B62006824B4 /* DealSetupLocationView.xib in Resources */,
+				EBA10E791B9E2B4A006824B4 /* ProjectDetailsView.xib in Resources */,
+				EBA2853F1BA9EC42000EC731 /* DealQuestionsDirectorView.xib in Resources */,
+				EBA10EA41B9E2B62006824B4 /* DealSetupPeopleView.xib in Resources */,
+				EBA10ED51B9E2C0C006824B4 /* LaunchScreen.xib in Resources */,
+				EBA10EA21B9E2B62006824B4 /* DealSetupAddPersonDialog.xib in Resources */,
+				EBA10EA01B9E2B62006824B4 /* DealSetupView.xib in Resources */,
+				EBA10EB41B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA10E461B9E2A9F006824B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4463177200E5AC7E24C4CE3B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		685D6F04AA34F25329F048B6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB4BFD111B9EAAC1007B5D0D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run be3e5758cb7f57efc85bffde1a9a2f6a847f75bb 94a2c2980123cbbebdb8bc75116571ad7228423ea49e36aeab6c253b6567e1e9";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBA10E2F1B9E2A9F006824B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4BFD261BA14E9A007B5D0D /* DummyDeal.swift in Sources */,
+				EBA10EBF1B9E2B62006824B4 /* DealSetupAddMaterialDialog.swift in Sources */,
+				EBE010191BA79BE1002F2689 /* UIViewControllerExtension.swift in Sources */,
+				EBE010201BA9E930002F2689 /* DealQuestionsCrewView.swift in Sources */,
+				EBA10EB21B9E2B62006824B4 /* DealSetupMusicView.swift in Sources */,
+				EBA285571BA9F6B6000EC731 /* DealQuestionsMusicLocMat.swift in Sources */,
+				EBA10E6D1B9E2B17006824B4 /* Material.swift in Sources */,
+				EBE010131BA784D2002F2689 /* PopDateViewController.swift in Sources */,
+				EBA10EBA1B9E2B62006824B4 /* DealSetupMusicAddTrackRecordingArtistTableCell.swift in Sources */,
+				EBA285451BA9EEEB000EC731 /* DealQuestionsPhotographerView.swift in Sources */,
+				EBA10E621B9E2AF2006824B4 /* Settings.swift in Sources */,
+				EBA10E731B9E2B30006824B4 /* AddProjectSceneManager.swift in Sources */,
+				EBA10E5F1B9E2AF2006824B4 /* ViewController.swift in Sources */,
+				EBA10E6A1B9E2B17006824B4 /* Location.swift in Sources */,
+				EBA10E5E1B9E2AF2006824B4 /* AppDelegate.swift in Sources */,
+				EBA2855C1BA9FD5F000EC731 /* DealQuestionsCollaboratorTableViewCell.swift in Sources */,
+				EBA10EB61B9E2B62006824B4 /* DealSetupMusicAddTrackDialog.swift in Sources */,
+				EBA10E6E1B9E2B17006824B4 /* Track.swift in Sources */,
+				EBA10EA51B9E2B62006824B4 /* DealSetupPeopleView.swift in Sources */,
+				EB4BFD1E1B9FF067007B5D0D /* DealQuestionsMasterView.swift in Sources */,
+				EBA10EAD1B9E2B62006824B4 /* DealSetupAddLocationDialog.swift in Sources */,
+				EBA10E6C1B9E2B17006824B4 /* Person.swift in Sources */,
+				EB381EA31BA294D300D400B4 /* YPDrawSignatureView.swift in Sources */,
+				EBA10EA81B9E2B62006824B4 /* DealSetupPeopleTableCell.swift in Sources */,
+				EBA10EB31B9E2B62006824B4 /* DealSetupMusicAddPersonTableCell.swift in Sources */,
+				EB4BFD181B9FED8A007B5D0D /* DealQuestionsTalentView.swift in Sources */,
+				EBA2854F1BA9F295000EC731 /* DealQuestionsPostProductionView.swift in Sources */,
+				EBA10EA61B9E2B62006824B4 /* DealSetupPeopleTable.swift in Sources */,
+				EBA10ECF1B9E2BAE006824B4 /* DropDownListView.m in Sources */,
+				EBA10E751B9E2B30006824B4 /* AddNewProjectSidebar.swift in Sources */,
+				EB4BFD241BA0E191007B5D0D /* DealQuestionsWriterView.swift in Sources */,
+				EBCB69541BA38015001BA276 /* DealSignView.swift in Sources */,
+				EBA10E691B9E2B17006824B4 /* Project.swift in Sources */,
+				EBA10EC21B9E2B62006824B4 /* DealSetupMaterialTableCell.swift in Sources */,
+				EBE010121BA784D2002F2689 /* PopDatePicker.swift in Sources */,
+				EB4BFD0F1B9E86F6007B5D0D /* DealSetupTrackPersonTableCell.swift in Sources */,
+				EBA10EA31B9E2B62006824B4 /* DealSetupAddPersonDialog.swift in Sources */,
+				EBA10EB81B9E2B62006824B4 /* DealSetupMusicAddTrackComposerTableCell.swift in Sources */,
+				EBA2855F1BAA0146000EC731 /* DealQuestionsCollaboratorView.swift in Sources */,
+				EBA285411BA9ECDB000EC731 /* DealQuestionsDirectorView.swift in Sources */,
+				EBE010171BA79AF0002F2689 /* LoginViewController.swift in Sources */,
+				EBA10E6B1B9E2B17006824B4 /* Role.swift in Sources */,
+				EB4BFD201B9FF286007B5D0D /* Deal.swift in Sources */,
+				EBA10EB71B9E2B62006824B4 /* DealSetupMusicAddTrackTableCell.swift in Sources */,
+				EB6FE9FB1BA28AF30026DCCF /* TestViewController.swift in Sources */,
+				EBA10EA11B9E2B62006824B4 /* DealSetupView.swift in Sources */,
+				EBA285491BA9F055000EC731 /* DealQuestionsPerformerView.swift in Sources */,
+				EBA10EAF1B9E2B62006824B4 /* DealSetupAddLocationTableCell.swift in Sources */,
+				EBA10EA91B9E2B62006824B4 /* DealSetupTrackTableCell.swift in Sources */,
+				EBA10EAB1B9E2B62006824B4 /* DealSetupLocationView.swift in Sources */,
+				EBA10E7A1B9E2B4A006824B4 /* ProjectDetailsView.swift in Sources */,
+				EBA10ED01B9E2BAE006824B4 /* DropDownViewCell.m in Sources */,
+				EBE0101B1BA79C04002F2689 /* RegisterViewController.swift in Sources */,
+				EBA285531BA9F4EE000EC731 /* DealQuestionsProducerView.swift in Sources */,
+				EBA10EBD1B9E2B62006824B4 /* DealSetupMaterialsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA10E441B9E2A9F006824B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA10E4F1B9E2A9F006824B4 /* studioplusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBA10E4A1B9E2A9F006824B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBA10E321B9E2A9F006824B4 /* studioplus */;
+			targetProxy = EBA10E491B9E2A9F006824B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EBA10E501B9E2A9F006824B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBA10E511B9E2A9F006824B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBA10E531B9E2A9F006824B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA086C34EAAB737169963623 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = studioplus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "studioplus/studioplus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBA10E541B9E2A9F006824B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D1D05874C56B92F6208280E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = studioplus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "studioplus/studioplus-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		EBA10E561B9E2A9F006824B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = studioplusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/studioplus.app/studioplus";
+			};
+			name = Debug;
+		};
+		EBA10E571B9E2A9F006824B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = studioplusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/studioplus.app/studioplus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBA10E2E1B9E2A9F006824B4 /* Build configuration list for PBXProject "studioplus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA10E501B9E2A9F006824B4 /* Debug */,
+				EBA10E511B9E2A9F006824B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBA10E521B9E2A9F006824B4 /* Build configuration list for PBXNativeTarget "studioplus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA10E531B9E2A9F006824B4 /* Debug */,
+				EBA10E541B9E2A9F006824B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBA10E551B9E2A9F006824B4 /* Build configuration list for PBXNativeTarget "studioplusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA10E561B9E2A9F006824B4 /* Debug */,
+				EBA10E571B9E2A9F006824B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBA10E2B1B9E2A9F006824B4 /* Project object */;
+}

@@ -1,0 +1,109 @@
+TODO
+- add all role-specific views to deal questions ( get visuals working )
+- add template values ( skip a few hard ones )
+
+- keyboard hiding on some views
+
+
+Deal object:
+=============
+Questions for ricky:
+- how are project overview #'s calculated?
+: p2 of pdf ( revenue, expenses per project )
+: what makes a project ‘active’ vs ‘inactive’
+
+
+
+
+********* TO DO NOW **************
+KNOWN FIXES TO MAKE
+/ 'all' tab - table view with expandable contents ( expanded cell shows full view as current, otherwise just "Add" button )
+/ keyboard hiding on some views
+/ datepopuppicker
+
+
+- rows 69-72
+- you want these in each row of the Composer sub-window of the Add new track window?
+- please clarify the exact nature / content of these controls
+- row 76 - specify contents exactly
+- row 77 - text box sufficient?
+
+
+QUESTIONS
+: is a deal document signed always by studio owner + one other Person? Specifically what happens with collaborators, and how are these ids reflected in the template? ( for now, add only the deal questions, project and the second signor's templateValues')
+: music fees?
+: some deal questions have no template id in spreadsheet ( “writer credit ( other)” )
+
+*** - view coords f'ed when trying to hide keyboard!!! for now allow extra scrolling
+
+Wed / Thu
+- implement additional roles
+// skipped Crew multi-select / custom logic, post-production credit dropdown, production credit dropdown
+
+- integrate webservice; add signature;
+- send email to signor
+
+
+
+INVARIANTS TO TRACK as developer
+: whenever you add a new object to the db-backed ecosystem, you must ensure that the other objects that need to have references to it.
+
+: in Deal Setup, any created model object should be referenced from the currentProject object. So,  For example, when adding Composers/recording artists in Add Music Track dialog, the moment those are created, they should also be added to the Project.people array.
+
+: noSQL-style db — not sure whether to have person contain location[], materials[], tracks[], or the latter contain a key to former, or both? ( I think the former is best )
+
+: model: test for equality is NSObject's ==: based on matching object memory addresses
+
+: to handle relationships like "tracks/locations/materials for a given person", we compute these dynamically with a Project helper class.  We don't hardwire these b/c of data duplication concerns in db, trying to keep the db model as simple as possible.  Also, some items may be associated with multiple people.  So in the db, we minimize the inter-object relations; in code, we compute dynamic associations when needed.
+: any object created in a dialog is a temporary object and SHOULD NOT be added to the Project-connected ecosystem. This mostly effects nested dialogs like Music->Add new track->add new person.  When you create a composer/recording artist here, it should be held in temporary memory until "ADD TRACK" is called on the parent dialog. Only during the validation of the newTrack being built then is everything then added to the project---refs to the composers/recordingartists from the newtrack are added to the project as well.
+: DropDownListView - if array is empty, do not show it ( you could get stuck )
+
+DOUBTS
+- right now, you are using lots of parallel arrays of indices---all well and good if you only append.  But if you delete?  You could be f-ed...must back propogate changes to all the index-based vars you have...best to allow only a "clear" function.
+- maintaining data integrity between model objects, esp while loading projects
+
+
+QUESTIONS essential
+
+
+
+Questions:
+
+
+
+Wisdom gained:
+- .xib crash/key value coding complaint even thoughI could draw outlets...on some dialogs, the "File Owner" was not the class itself, make sure your outlets are to the class itself not the file owner
+- solved the scrolling keyboard issue
+- delegates galore
+- using xibs -- a pattern for doing so reliably
+- handling data model in a complex set of nested views
+- PFSubclassing
+: good model for Bools / unsupported types
+: how to override init() cleanly?  manualInit() is horrible
+- how to get automatic dimensions from a nib, avoid hard-coding?  I guess with autolayout this is moot
+
+Hours worked:
+- before Mon: 4 ( reading the stupid specs )
+- Mon: 4 ( setup of addnewproject scene/nested controllers )
+- Tue: 4
+- Wed: 2
+- Thu: 2
+- Fri: 2
+- Sat: 6
+- sun: 5
+- Mon: 6
+- tue: 4
+- wed: 3
+- thu: 3
+- fri: 3
+- sat: 3
+- Sun: 5
+- Mon: 4
+- Tue: 4
+- Wed: 2
+
+est:
+4 to finish role questions -
+8 to update UI
+8 hrs form logic
+
